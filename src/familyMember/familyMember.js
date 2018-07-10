@@ -1,10 +1,5 @@
 class FamilyMember{
 
-  this.name;
-  this.parents;
-  this.children;
-  this.age;
-
   constructor(name, parents = [null, null]){
     this.name = name
     this.parents = parents
@@ -30,4 +25,12 @@ class FamilyMember{
   getchildren(){
     return this.children
   }
+
+  addProperty(propName, value){
+    this[propName] = value
+  }
 }
+
+let John = new FamilyMember("John");
+John.addProperty("Age", 21)
+console.log(John)
