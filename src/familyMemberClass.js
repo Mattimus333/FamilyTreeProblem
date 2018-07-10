@@ -4,7 +4,7 @@ export class FamilyMember{
     this.name = name;
     this.parents = parents;
     this.children = [];
-    this.spouse;
+    this.spouse = undefined;
   }
 
   setParents(parents){
@@ -12,7 +12,7 @@ export class FamilyMember{
   }
 
   addChild(child){
-    this.children = this.children.push(child);
+    this.children.push(child);
   }
 
   addProperty(propName, value){
