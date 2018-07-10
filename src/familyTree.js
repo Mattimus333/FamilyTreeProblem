@@ -1,5 +1,6 @@
 import React from "react";
 import { FamilyMember } from "./familyMemberClass"
+import { AddButton } from "./addButton"
 
 class FamilyTree extends React.Component {
 
@@ -26,7 +27,7 @@ class FamilyTree extends React.Component {
     }
     return (
       <ul>
-        {coupleString}
+        <div>{coupleString}<AddButton/></div>
         {this.getChildren(familyMember)}
       </ul>
     )
