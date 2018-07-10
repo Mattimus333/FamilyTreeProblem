@@ -10,8 +10,6 @@ class FamilyTree extends React.Component {
     let kid = new FamilyMember("Riley Curry")
     this.state.headOfFamily.addChild(kid)
     this.state.headOfFamily.spouse = spouse
-    kid.addSpouse(new FamilyMember("Chris Paul Jr."))
-    kid.addChild(new FamilyMember("Steph Curry Jr."))
   }
 
   render() {
